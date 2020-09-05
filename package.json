@@ -1,0 +1,73 @@
+{
+  "name": "duration-input",
+  "version": "0.1.0",
+  "description": "Simple way to implement you own duration input with hooks",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "esmodule": "dist/index.esmodule.js",
+  "umd:main": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.js",
+      "umd": "./dist/index.umd.js",
+      "import": "./dist/index.module.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "test": "test",
+    "rollup": "rollup -c rollup.config.js",
+    "build": "microbundle build --entry src/index.ts --name duration-input --tsconfig tsconfig.build.json",
+    "start-demo": "webpack-dev-server --config demo/webpack.config.js --progress --hot",
+    "build-demo": "webpack --production --output-public-path /duration-input/ --config  demo/webpack.config.js",
+    "deploy-demo": "npm run build-demo && gh-pages -d demo/dist"
+  },
+  "author": "vovakulikov@icloud.com",
+  "license": "ISC",
+  "peerDependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@rollup/plugin-typescript": "^5.0.1",
+    "@types/classnames": "^2.2.9",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "eslint": "^7.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "node-sass": "^4.13.0",
+    "react-hot-loader": "^4.13.0",
+    "rollup": "^2.18.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
+    "typescript": "^3.9.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "microbundle": "^0.12.4"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
