@@ -1,0 +1,43 @@
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  padding: 16px;
+}
+
+.flex-textarea {
+  width: auto;
+  display: inline-block;
+}
+
+.demo-block {
+  padding: 20px 40px;
+  margin: 20px 0;
+  border: 1px solid darkgrey;
+}
+
+.theme-dark {
+  background: rgba(0,0,0,.9);
+  color: white;
+}
+
+.pre {
+  font-family: monospace;
+  background: whitesmoke;
+  border: 1px solid darkgrey;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.control-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.control {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
