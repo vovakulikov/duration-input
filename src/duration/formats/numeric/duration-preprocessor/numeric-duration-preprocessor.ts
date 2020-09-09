@@ -31,11 +31,11 @@ export class NumericDurationPreprocessor {
   private matcher: DurationMatcher;
   private formatter: NumericDurationFormatter;
   
-  constructor(props: INumericDurationPreprocessorProps) {
+  constructor(props?: INumericDurationPreprocessorProps) {
     const {
       intl = DEFAULT_INTL,
       dayDuration = DEFAULT_DAY_DURATION
-    } = props;
+    } = props ?? {};
     
     this.intl = createIntl(intl);
     this.dayDuration = dayDuration;

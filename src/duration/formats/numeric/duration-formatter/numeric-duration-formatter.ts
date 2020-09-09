@@ -13,11 +13,11 @@ export class NumericDurationFormatter {
   private intl: IProcessedDurationI18n;
   private dayDuration: Duration;
   
-  constructor(props: INumericDurationFormatterProps) {
+  constructor(props?: INumericDurationFormatterProps) {
     const {
       intl = DEFAULT_INTL,
       dayDuration = DEFAULT_DAY_DURATION,
-    } = props;
+    } = props ?? {};
     
     this.intl = createIntl(intl);
     this.dayDuration = dayDuration;
