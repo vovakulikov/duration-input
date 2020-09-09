@@ -6,7 +6,7 @@ const formatter = new NumericDurationFormatter();
 
 describe('numeric duration formatter tests', () => {
   test('should format empty duration', () => {
-    expect(formatter.format(null, NumericDurationPattern.hour)).toEqual(null);
+    expect(formatter.format(null, NumericDurationPattern.hour)).toEqual('');
   });
   
   test('should throw on empty pattern', () => {
@@ -15,7 +15,7 @@ describe('numeric duration formatter tests', () => {
   
   test('should format duration in minutes in time format', () => {
     // act & assert
-    expect(formatter.format(null, NumericDurationPattern.hour)).toEqual(null);
+    expect(formatter.format(null, NumericDurationPattern.hour)).toEqual('');
     expect(formatter.format(10, NumericDurationPattern.hour)).toEqual('10m');
     expect(formatter.format(60, NumericDurationPattern.hour)).toEqual('1h');
     expect(formatter.format(75, NumericDurationPattern.hour)).toEqual('1h 15m');
@@ -32,7 +32,7 @@ describe('numeric duration formatter tests', () => {
   
   test('should format duration in minutes in workday format', () => {
     // act & assert
-    expect(formatter.format(null, NumericDurationPattern.day)).toEqual(null);
+    expect(formatter.format(null, NumericDurationPattern.day)).toEqual('');
     expect(formatter.format(10, NumericDurationPattern.day)).toEqual('10m');
     expect(formatter.format(60, NumericDurationPattern.day)).toEqual('1h');
     expect(formatter.format(75, NumericDurationPattern.day)).toEqual('1h 15m');

@@ -1,7 +1,7 @@
 import { NumericDurationParser } from "./numeric-duration-parser";
 import { Duration, inMinutes, toString } from "../../../duration";
-import { DurationParser } from "../../../duration-parser";
 import { NumericDurationPattern } from "../numeric-duration-pattern";
+import { DEFAULT_DAY_DURATION } from "../../../constants";
 
 declare global {
   namespace jest {
@@ -33,7 +33,7 @@ describe('NumericDurationParser', () => {
   
   function getDurationByDays(value: string) {
     return new Duration({
-      minutes: +value * inMinutes(DurationParser.defaultWorkDayDuration)
+      minutes: +value * inMinutes(DEFAULT_DAY_DURATION)
     })
   }
   
