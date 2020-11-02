@@ -41,3 +41,13 @@ body {
   margin-right: 8px;
   margin-bottom: 8px;
 }
+
+.input {
+  font-size: 2em;
+  padding: 8px 16px;
+  border: 2px solid blue;
+}
+
+.input--invalid {
+  border-color: brown;
+}
