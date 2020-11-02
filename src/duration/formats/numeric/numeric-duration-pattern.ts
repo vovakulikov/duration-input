@@ -1,4 +1,4 @@
 export enum NumericDurationPattern {
-  hour,
-  day
+  hour = 'hour',
+  day = 'day'
 }
