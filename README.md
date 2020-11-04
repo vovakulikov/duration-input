@@ -1,7 +1,7 @@
 <img src="/assets/duration-input.png" />
 
 <div>
-  <strong>Duration parser</strong> simple hook to build you own duration input.
+  <strong>Duration utils</strong> simple package with hook to build you own duration input.
 </div>
  
 ## Features
@@ -17,12 +17,12 @@ You can try it on [live demo page](https://vovakulikov.github.io/duration-input/
 
 ## Install
 
-`npm install duration-parser`
+`npm install duration-utils`
 
 ## Usage
 
 ```jsx
-import { useDurationParser, NumericDurationPattern } from "duration-parser";
+import { useDurationParser, NumericDurationPattern } from "duration-utils";
 
 function DurationInput() {
 // First number is a day
@@ -73,7 +73,7 @@ Converters
 #### Usage
 
 ```js
-import { Duration } from "duration-parser";
+import { Duration } from "duration-utils";
 
 const workDay = new Duration({ hour: 8 });
 const overTime = new Duration({ hour: 2, minutes: 30 })
