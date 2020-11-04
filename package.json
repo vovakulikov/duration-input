@@ -1,6 +1,6 @@
 {
   "name": "duration-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple way to implement you own duration input with hooks",
   "source": "src/index.ts",
   "main": "dist/index.js",
