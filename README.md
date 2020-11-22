@@ -13,7 +13,7 @@
 - **Intl support**: Use your lang for day/hour/minute strings.
 - **No dependencies** 
 
-You can try it on [live demo page](https://vovakulikov.github.io/duration-input/)
+You can try it on [live demo page](https://vovakulikov.github.io/duration-utils/)
 
 ## Install
 

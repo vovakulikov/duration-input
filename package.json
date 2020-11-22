@@ -1,6 +1,6 @@
 {
   "name": "duration-utils",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Simple way to implement you own duration input with hooks",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   "scripts": {
     "test": "jest ./src",
     "rollup": "rollup -c rollup.config.js",
-    "build": "microbundle build --entry src/index.ts --name duration-input --tsconfig tsconfig.build.json",
+    "build": "microbundle build --entry src/index.ts --name duration-utils --tsconfig tsconfig.build.json",
     "start-demo": "webpack-dev-server --config demo/webpack.config.js --progress --hot",
     "build-demo": "webpack --production --output-public-path /duration-utils/ --config  demo/webpack.config.js",
     "deploy-demo": "npm run build-demo && gh-pages -d demo/dist"
